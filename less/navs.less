@@ -219,14 +219,11 @@
 // Tabbable tabs
 // -------------------------
 
-// Hide tabbable panes to start, show them when `.active`
+// Hide tabbable panes that not `.active`
 .tab-content {
-  > .tab-pane {
+  > .tab-pane:not(.active) {
     height: 0;
     overflow-y: hidden;
-  }
-  > .active {
-    height: auto;
   }
 }
 
